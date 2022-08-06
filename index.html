@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>第一个网站
+        </title>
+        <body>
+            <h1 style="background-color:rgb(108, 108, 247);text-align:center;">我的网站</h1>
+            <p><i>日期</i> 2022.8.5</p>
+            <div id="div1"></div>
+            <script>
+                function time() {
+                    var date = new Date();
+                    var year = date.getFullYear();
+                    var month = date.getMonth() + 1;
+                    var day = date.getDay();
+                    var hour = date.getHours();
+                    var minutes = date.getMinutes();
+                    var seconds = date.getSeconds();
+                    var str = "现在的时间 : " 
+                    + year + "年" + month + "月" + day + "日" + hour + "时" + minutes + "分" + seconds + "秒";
+                    var div1 = document.getElementById("div1");
+                    div1.innerHTML = str;
+                }
+                setInterval(time, 1000);
+            </script>
+            <div style="text-align:center">
+            <form action="">
+                Username:<input type="text" name="user"><br>
+                Password: <input type="password" name="password">
+            </form>
+            </div>
+            <a href="https://www.runoob.com/html"><i>学习链接</i></a>
+            <hr>
+            <div id="footer" style="background-color:#FFA500;clear:both;text-align:center;">
+            <a href="https://github.com/primary12138tnnd?tab=repositories">primary12138tnnd@版权</a>
+            </div>
+        </body>
+    </head>
+</html>
